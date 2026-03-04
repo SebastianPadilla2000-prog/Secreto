@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Secreto para Ti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- CARTA CERRADA -->
+        <div id="envelope" class="envelope">
+            <div class="envelope-content">
+                <div class="envelope-front">
+                    <p class="envelope-text">📮 Un Secreto para Ti</p>
+                    <p class="envelope-subtitle">Haz clic para abrir</p>
+                </div>
+                <div class="envelope-flap"></div>
+            </div>
+        </div>
+
+        <!-- CONTENIDO DE LA CARTA -->
+        <div id="letter" class="letter hidden">
+            <div class="letter-header">
+                <p class="letter-decorative">✦ ✦ ✦</p>
+                <h1 class="letter-title">Mi Amor</h1>
+                <p class="letter-decorative">✦ ✦ ✦</p>
+            </div>
+
+            <div class="letter-body">
+                <p class="letter-text">
+                    Hace tiempo éramos uno para el otro. Pasamos por momentos que nos marcaron, 
+                    alegrias y tristezas que solo nosotros conocemos. Luego nos alejamos, 
+                    pero el destino es curioso...
+                </p>
+
+                <p class="letter-text">
+                    Hace poco tiempo volvimos a encontrarnos. Sin esperarlo, comenzamos 
+                    a conocernos de nuevo, y con cada conversación, cada risa, cada momento... 
+                    me enamoré de ti nuevamente. Eres la persona que quería que fueras, 
+                    y tu también lo sentiste.
+                </p>
+
+                <p class="letter-text">
+                    Dijimos que poco a poco, sin prisa. Y aquí estamos, después de todo este tiempo, 
+                    siento que es el momento correcto. Has estado en mi mente y en mi corazón 
+                    cada día.
+                </p>
+
+                <p class="letter-text letter-question">
+                    Así que te hago esta pregunta que siempre quise hacerte:
+                </p>
+
+                <p class="letter-text letter-main-question">
+                    <strong>¿Quieres ser mi enamorada?</strong>
+                </p>
+
+                <div class="button-container">
+                    <button id="siBtn" class="btn btn-si">
+                        <span>Sí</span>
+                    </button>
+                    <button id="noBtn" class="btn btn-no">
+                        <span>No</span>
+                    </button>
+                </div>
+            </div>
+
+            <p class="letter-footer">Con todo mi corazón,<br><strong>Seba</strong></p>
+        </div>
+
+        <!-- CELEBRACIÓN -->
+        <div id="celebration" class="celebration hidden">
+            <div class="celebration-content">
+                <div class="stick-figure">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm arm-left"></div>
+                    <div class="arm arm-right"></div>
+                    <div class="leg leg-left"></div>
+                    <div class="leg leg-right"></div>
+                </div>
+                <h1 class="celebration-text">¡SIIIUUU! 🎉</h1>
+                <p class="celebration-subtitle">¡Dijo que siiiiiii! 💕</p>
+                <div class="confetti" id="confetti"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÚSICA DE FONDO -->
+    <audio id="bgMusic" loop>
+        <source src="wildest-dreams-instrumental.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
